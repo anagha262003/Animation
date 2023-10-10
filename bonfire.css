@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #522e2a;
+}
+.glowing-circle {
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    top: 44%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background: #5c3631;
+    border-radius: 1000px;
+}
+.log {
+    height: 60px;
+    width: 30px;
+    position: fixed;
+    top: 63.25vh;
+    background-color: #725442;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+}
+.log_1 {
+    left: 49.25vw;
+    transform: rotate(45deg);
+
+}
+.log_2 {
+    top: 64vh;
+    left: 51.25vw;
+}
+.log_3 {
+    left: 53.25vw;
+    transform: rotate(-45deg);
+}
+.log_circle {
+    background-color: #91725c;
+    position: fixed;
+}
+.log_circle_1 {
+    height: 35px;
+    width: 32px;
+    border-radius: 40px;
+    top: 68.75vh;
+    left: 47.5vw;
+}
+.log_circle_2 {
+    height: 37px;
+    width: 37px;
+    border-radius: 100px;
+    top: 71vh;
+    left: 50.9vw;
+}
+.log_circle_3 {
+    height: 35px;
+    width: 32px;
+    border-radius: 40px;
+    top: 68.75vh;
+    left: 55vw;
+}
+.flame_container {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    animation: flame_flickering 3ms 200ms ease-in infinite alternate;
+}
+.flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0 50% 50%;
+    transform: rotate(-45deg) scale(1.5, 1.5);
+}
+.flame_yellow {
+    left: 15px;
+    width: 30px;
+    height: 20px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+.flame_orange {
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: orange;
+    box-shadow: 0px 0px 9px  4px orange ;
+}
+.flame_red {
+    left: 5px;
+    width: 50px;
+    height: 60px;
+    background: OrangeRed;
+    box-shadow: 0px 0px 5px 4px orangered;
+}
+.circle {
+    border-radius: 50%;
+    position: absolute;
+}
+.flame_blue {
+    width: 10px;
+    height: 10px;
+    left: 25px;
+    bottom: -25px;
+    background: slateblue;
+    box-shadow: 0px 0px 15px 10px slateblue;
+}
+.flame_black {
+    width: 11px;
+    height: 11px;
+    left: 25px;
+    bottom: -40px;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+}
+@keyframes flame_flickering {
+    0% {
+        transform: rotate(-1deg);
+    }
+    15% {
+        transform: rotate(1deg) scaleY(0.95);
+    }
+    30% {
+        transform: rotate(-1deg) scaleY(0.9);
+    }
+    45% {
+        transform: rotate(1deg) scaleY(0.95);
+    }
+    60% {
+        transform: rotate(-1deg) scaleY(1);
+    }
+    75% {
+        transform: rotate(1deg) scaleY(1.05);
+    }
+    90% {
+        transform: rotate(-1deg) scaleY(1);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
